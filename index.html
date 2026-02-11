@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumber Jaya Building Material - Bahan Bangunan Terpercaya</title>
+    <meta name="description" content="Pusat bahan bangunan terlengkap dan terpercaya untuk segala kebutuhan konstruksi Anda at Sumber Jaya Building Material.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316', // Orange-500
+                        primaryHover: '#ea580c', // Orange-600
+                        secondary: '#4b5563', // Gray-600
+                        dark: '#111827', // Gray-900
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased selection:bg-orange-100 selection:text-orange-600">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-2 group">
+                        <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center text-white shadow-lg transform group-hover:rotate-3 transition-transform duration-300">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-xl tracking-tight text-gray-900 leading-none">Sumber Jaya</span>
+                            <span class="text-xs font-medium text-orange-600 tracking-wider">BUILDING MATERIAL</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-orange-600 font-medium transition-colors duration-200">Beranda</a>
+                    <a href="#about" class="text-gray-600 hover:text-orange-600 font-medium transition-colors duration-200">Tentang</a>
+                    <a href="#products" class="text-gray-600 hover:text-orange-600 font-medium transition-colors duration-200">Produk</a>
+                    <a href="#services" class="text-gray-600 hover:text-orange-600 font-medium transition-colors duration-200">Layanan</a>
+                    <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-orange-600 focus:outline-none p-2" aria-label="Toggle menu">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 py-4 space-y-2 flex flex-col">
+                <a href="#home" class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-lg font-medium transition-colors">Beranda</a>
+                <a href="#about" class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-lg font-medium transition-colors">Tentang</a>
+                <a href="#products" class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-lg font-medium transition-colors">Produk</a>
+                <a href="#services" class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-lg font-medium transition-colors">Layanan</a>
+                <a href="#contact" class="block px-4 py-3 mt-2 text-center bg-orange-500 text-white rounded-lg font-medium shadow-md hover:bg-orange-600 transition-colors">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Construction Site" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6 animate-fade-in-up">
+                    Membangun Masa Depan <br class="hidden sm:block">
+                    <span class="text-orange-500">Bersama Anda</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl animate-fade-in-up delay-100">
+                    Kami menyediakan bahan bangunan berkualitas tinggi untuk memastikan kekokohan dan keindahan setiap proyek konstruksi Anda. Terpercaya sejak 2010.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200 justify-center sm:justify-start">
+                    <a href="#products" class="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-1 text-center">
+                        Lihat Katalog Produk
+                    </a>
+                    <a href="#contact" class="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-bold rounded-lg transition-all duration-300 text-center">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#about" class="text-white hover:text-orange-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <!-- Image Side -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Us" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-orange-500/10 group-hover:bg-transparent transition-colors duration-300"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Text Side -->
+                    <div class="w-full lg:w-1/2">
+                        <span class="text-orange-600 font-semibold tracking-wider text-sm uppercase">Tentang Kami</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Mitra Terpercaya untuk Kebutuhan Konstruksi Anda</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Sumber Jaya Building Material telah melayani masyarakat dan kontraktor sejak tahun 2010. Kami berdedikasi untuk menyediakan berbagai macam bahan bangunan dengan kualitas terbaik dan harga yang kompetitif.
+                        </p>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Komitmen kami adalah kepuasan pelanggan melalui pelayanan yang ramah, pengiriman tepat waktu, dan produk yang terjamin. Kami percaya bahwa setiap bangunan yang kokoh berawal dari bahan yang berkualitas.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="border-l-4 border-orange-500 pl-4">
+                                <h4 class="text-2xl font-bold text-gray-900">15+</h4>
+                                <p class="text-gray-500 text-sm">Tahun Pengalaman</p>
+                            </div>
+                            <div class="border-l-4 border-orange-500 pl-4">
+                                <h4 class="text-2xl font-bold text-gray-900">5000+</h4>
+                                <p class="text-gray-500 text-sm">Proyek Terselesaikan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Featured Products Section -->
+        <section id="products" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-orange-600 font-semibold tracking-wider text-sm uppercase">Produk Unggulan</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Solusi Lengkap Bangunan Anda</h2>
+                    <div class="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Semen & Pasir" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">Best Seller</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Semen & Material Dasar</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Sedia berbagai merek semen berkualitas (Holcim, Tiga Roda, Gresik) dan pasir pilihan.</p>
+                            <a href="#contact" class="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Pesan Sekarang <span aria-hidden="true">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Batu Bata & Hebel" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Bata Merah & Hebel</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Bata merah press super dan bata ringan (hebel) presisi tinggi untuk dinding kokoh.</p>
+                            <a href="#contact" class="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Pesan Sekarang <span aria-hidden="true">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Besi Beton" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Besi Beton & Baja</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Besi beton SNI berbagai ukuran, wiremesh, dan baja ringan untuk rangka atap.</p>
+                            <a href="#contact" class="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Pesan Sekarang <span aria-hidden="true">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                     <!-- Product 4 -->
+                     <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1528190261457-076857f48887?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cat & Finishing" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Cat & Finishing</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Cat tembok interior & eksterior, cat kayu, dan perlengkapan pengecatan lengkap.</p>
+                            <a href="#contact" class="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Pesan Sekarang <span aria-hidden="true">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1632198761400-00497310f848?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Keramik & Granit" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">New Arrival</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Keramik & Granit</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Koleksi lantai dan dinding dengan berbagai motif modern dan ukuran.</p>
+                            <a href="#contact" class="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Pesan Sekarang <span aria-hidden="true">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://plus.unsplash.com/premium_photo-1682724032941-ec4a6e124138?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Peralatan Tukang" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Peralatan Tukang</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Alat-alat pertukangan lengkap, bor, gerinda, palu, dan safety gear.</p>
+                            <a href="#contact" class="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Pesan Sekarang <span aria-hidden="true">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row gap-12 items-start">
+                    <div class="w-full md:w-1/3 lg:sticky lg:top-24">
+                        <span class="text-orange-600 font-semibold tracking-wider text-sm uppercase">Layanan Kami</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Lebih Dari Sekedar Toko Bangunan</h2>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Kami memberikan nilai tambah bagi pelanggan melalui layanan profesional yang memudahkan proyek konstruksi Anda.
+                        </p>
+                        <a href="#contact" class="px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white rounded-lg transition-colors inline-block">
+                            Konsultasi Gratis
+                        </a>
+                    </div>
+                    
+                    <div class="w-full md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Service 1 -->
+                        <div class="bg-gray-50 p-8 rounded-xl hover:bg-orange-50 transition-colors duration-300 group">
+                            <div class="w-14 h-14 bg-white rounded-lg shadow-sm flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Pengiriman Cepat</h3>
+                            <p class="text-gray-600">Armada lengkap siap mengantar pesanan Anda tepat waktu ke lokasi proyek, dalam dan luar kota.</p>
+                        </div>
+
+                         <!-- Service 2 -->
+                         <div class="bg-gray-50 p-8 rounded-xl hover:bg-orange-50 transition-colors duration-300 group">
+                            <div class="w-14 h-14 bg-white rounded-lg shadow-sm flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Konsultasi Ahli</h3>
+                            <p class="text-gray-600">Tim kami siap membantu menghitung kebutuhan material dan memberikan rekomendasi produk terbaik.</p>
+                        </div>
+
+                         <!-- Service 3 -->
+                         <div class="bg-gray-50 p-8 rounded-xl hover:bg-orange-50 transition-colors duration-300 group">
+                            <div class="w-14 h-14 bg-white rounded-lg shadow-sm flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Harga Grosir</h3>
+                            <p class="text-gray-600">Dapatkan penawaran harga khusus untuk pembelian dalam jumlah besar atau untuk kontraktor langganan.</p>
+                        </div>
+
+                         <!-- Service 4 -->
+                         <div class="bg-gray-50 p-8 rounded-xl hover:bg-orange-50 transition-colors duration-300 group">
+                            <div class="w-14 h-14 bg-white rounded-lg shadow-sm flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Barang Dijamin Asli</h3>
+                            <p class="text-gray-600">Garansi keaslian produk 100%. Kami hanya menjual barang dari distributor resmi dan terpercaya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-gray-900 text-white relative overflow-hidden">
+             <div class="absolute inset-0 z-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Background Pattern" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2">Mengapa Memilih Sumber Jaya?</h2>
+                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Kami memahami bahwa kepercayaan dibangun di atas kualitas dan konsistensi.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 border border-gray-700 rounded-xl bg-gray-800/50 backdrop-blur-sm hover:border-orange-500 transition-colors duration-300">
+                        <div class="text-orange-500 font-bold text-5xl mb-4">01</div>
+                        <h3 class="text-xl font-bold mb-2">Terlengkap</h3>
+                        <p class="text-gray-400">One-stop solution untuk semua kebutuhan material bangunan Anda.</p>
+                    </div>
+                    <div class="p-6 border border-gray-700 rounded-xl bg-gray-800/50 backdrop-blur-sm hover:border-orange-500 transition-colors duration-300">
+                        <div class="text-orange-500 font-bold text-5xl mb-4">02</div>
+                        <h3 class="text-xl font-bold mb-2">Termurah</h3>
+                        <p class="text-gray-400">Harga bersaing dengan jaminan kualitas terbaik di kelasnya.</p>
+                    </div>
+                    <div class="p-6 border border-gray-700 rounded-xl bg-gray-800/50 backdrop-blur-sm hover:border-orange-500 transition-colors duration-300">
+                        <div class="text-orange-500 font-bold text-5xl mb-4">03</div>
+                        <h3 class="text-xl font-bold mb-2">Terpercaya</h3>
+                        <p class="text-gray-400">Reputasi yang dibangun lebih dari 10 tahun melayani pelanggan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-orange-600 font-semibold tracking-wider text-sm uppercase">Testimoni</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Apa Kata Pelanggan Kami</h2>
+                    <div class="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex text-orange-400 mb-4">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">"Pelayanan Sumber Jaya sangat memuaskan. Barang dikirim tepat waktu dan kondisi sangat baik. Sangat membantu proyek renovasi rumah saya."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Budi Santoso</h4>
+                                <p class="text-sm text-gray-500">Kontraktor Perumahan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex text-orange-400 mb-4">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">"Harga bersaing dan kualitas materialnya bagus. Sudah langganan 5 tahun, tidak pernah kecewa. Sukses selalu buat Sumber Jaya!"</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Siti Rahayu</h4>
+                                <p class="text-sm text-gray-500">Pemilik Rumah</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex text-orange-400 mb-4">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">"Terima kasih atas pelayanannya yang cepat. Pesan pagi, siang sudah sampai di lokasi. Drivernya juga ramah dan membantu bongkar muatan"</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Agus Setiawan</h4>
+                                <p class="text-sm text-gray-500">Arsitek</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-orange-600 font-semibold tracking-wider text-sm uppercase">Galeri</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Dokumentasi Proyek</h2>
+                    <div class="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                     <div class="h-64 rounded-xl overflow-hidden shadow-lg group">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="h-64 rounded-xl overflow-hidden shadow-lg group">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="h-64 rounded-xl overflow-hidden shadow-lg group">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                     <div class="h-64 rounded-xl overflow-hidden shadow-lg group">
+                        <img src="https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div>
+                        <span class="text-orange-600 font-semibold tracking-wider text-sm uppercase">Hubungi Kami</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Siap Membantu Kebutuhan Anda</h2>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Jangan ragu untuk menghubungi kami untuk konsultasi, pemesanan, atau pertanyaan seputar produk. Tim kami siap melayani Anda.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Alamat Kami</h4>
+                                    <p class="text-gray-600">Jl. Raya Bahan Bangunan No. 88, Jakarta Selatan, DKI Jakarta 12345</p>
+                                </div>
+                            </div>
+                            
+                             <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Telepon & WhatsApp</h4>
+                                    <p class="text-gray-600">+62 812-3456-7890 (WhatsApp)</p>
+                                    <p class="text-gray-600 ">+62 21-555-8888 (Kantor)</p>
+                                </div>
+                            </div>
+                            
+                             <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Jam Operasional</h4>
+                                    <p class="text-gray-600">Senin - Sabtu: 08.00 - 17.00 WIB</p>
+                                    <p class="text-gray-600">Minggu: Tutup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Maps Embed -->
+                    <div class="h-96 rounded-2xl overflow-hidden shadow-lg bg-gray-200">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2995960000003!2d106.82424!3d-6.22418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e49339e083%3A0xc6c5188f6f5a0!2sJakarta%20Selatan%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1650000000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Footer Brand -->
+                <div>
+                   <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center text-white">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                            </svg>
+                        </div>
+                        <span class="font-bold text-lg tracking-tight">Sumber Jaya</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Pusat bahan bangunan terlengkap dan terpercaya. Kami siap memenuhi kebutuhan konstruksi Anda dengan produk berkualitas dan pelayanan terbaik.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-white">Tautan Cepat</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#home" class="hover:text-orange-500 transition-colors">Beranda</a></li>
+                        <li><a href="#about" class="hover:text-orange-500 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#products" class="hover:text-orange-500 transition-colors">Produk</a></li>
+                        <li><a href="#services" class="hover:text-orange-500 transition-colors">Layanan</a></li>
+                        <li><a href="#contact" class="hover:text-orange-500 transition-colors">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                
+                 <!-- Product Categories -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-white">Kategori Produk</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Semen & Pasir</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Batu Bata & Hebel</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Besi Beton</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Cat & Finishing</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Keramik & Granit</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info Footer -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-white">Ikuti Kami</h3>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-orange-500 hover:text-white transition-all">
+                             <span class="sr-only">Facebook</span>
+                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-orange-500 hover:text-white transition-all">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.484 2h.05m-2.25 6h-.03a2.25 2.25 0 00-2.22 2.25v.03a2.25 2.25 0 002.25 2.22h.03a2.25 2.25 0 002.22-2.25v-.03a2.25 2.25 0 00-2.25-2.22zm4.5 0h-.03a2.25 2.25 0 00-2.22 2.25v.03a2.25 2.25 0 002.25 2.22h.03a2.25 2.25 0 002.22-2.25v-.03a2.25 2.25 0 00-2.25-2.22zm-2.25 6h-.03a2.25 2.25 0 00-2.22 2.25v.03a2.25 2.25 0 002.25 2.22h.03a2.25 2.25 0 002.22-2.25v-.03a2.25 2.25 0 00-2.25-2.22zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Sumber Jaya Building Material. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-4">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+    <!-- Template Switcher & Watermark -->
+    <div id="template-switcher" class="fixed bottom-4 left-4 z-[9999] group font-sans">
+        <button class="bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 hover:bg-gray-700 transition-all border border-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+            <span class="text-sm font-medium">Ganti Template</span>
+        </button>
+        <div class="absolute bottom-full left-0 mb-2 w-64 bg-white rounded-xl shadow-xl border border-gray-200 overflow-hidden transform scale-90 opacity-0 group-hover:opacity-100 group-hover:scale-100 origin-bottom-left transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
+            <div class="p-2 space-y-1">
+                 <a href="index.html" class="block px-3 py-2 rounded-lg bg-orange-50 text-orange-700 text-sm font-bold border border-orange-200">
+                    Template 1
+                    <span class="block text-xs font-normal text-gray-500">Modern Simple (Active)</span>
+                 </a>
+                 <a href="index-template-2.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm">
+                    <span class="font-bold block">Template 2</span>
+                    <span class="text-xs text-gray-500">Industrial Dark</span>
+                 </a>
+                 <a href="index-template-3.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm">
+                    <span class="font-bold block">Template 3</span>
+                    <span class="text-xs text-gray-500">Corporate Clean</span>
+                 </a>
+                 <a href="index-template-4.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm">
+                    <span class="font-bold block">Template 4</span>
+                    <span class="text-xs text-gray-500">Friendly Local</span>
+                 </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Watermark Overlay -->
+    <div class="fixed inset-0 z-[9999] pointer-events-none flex items-center justify-center overflow-hidden opacity-5" style="background-image: repeating-linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), repeating-linear-gradient(45deg, #000 25%, #f0f0f0 25%, #f0f0f0 75%, #000 75%, #000); background-position: 0 0, 10px 10px; background-size: 20px 20px;"></div>
+    <div class="fixed inset-0 z-[9999] pointer-events-none grid grid-cols-3 grid-rows-3 opacity-10 select-none">
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+         <div class="flex items-center justify-center transform -rotate-45 text-4xl font-black text-gray-500">PREVIEW MODE</div>
+    </div>
+    
+    <script>
+        // Disable Right Click for Basic Protection
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Advanced Anti-Theft Measures
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) { // F12
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { // Ctrl+S
+                return false;
+            }
+        };
+
+        // Debugger Trap
+        setInterval(function() {
+            var startTime = performance.now();
+            debugger;
+            if (performance.now() - startTime > 100) {
+                 window.location.reload(); // Reload if DevTools is open and paused script execution
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
